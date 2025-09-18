@@ -189,5 +189,20 @@ Special characters like \n and \t are not interpreted.`
 		// Alternativa simple cuando esperas decimal y un int:
 		v3, err := strconv.Atoi("1333")
 		fmt.Println("Atoi:", v3, err)
+
+		// Tipo de dato byte
+		var A byte = 'A'
+		var a byte = 'a'
+		fmt.Println("A:", A, "a:", a)
+
+		var R byte = 82
+		var s byte = 115
+		fmt.Println("R:", R, "s:", s)
+
+		fmt.Println(string(R), string(s))
+
+		vector := []byte{65, 66, 67, 68, 69}
+		fmt.Println("vector:", vector)
+		fmt.Println("vector como string:", string(vector))
 	}
 }
